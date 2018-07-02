@@ -1,0 +1,9 @@
+<launch>
+  <arg name="moveit_controller_manager"
+       default="moveit_simple_controller_manager/MoveItSimpleControllerManager"/>
+  <param name="moveit_controller_manager"
+         value="$(arg moveit_controller_manager)"/>
+
+  <!-- The rest of the params are specific to this plugin -->
+  <rosparam file="$(find summit_x_m1n4s300_moveit_config)/config/controllers.yaml"/>
+</launch>

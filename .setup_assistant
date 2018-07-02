@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: summit_xl_description
+    relative_path: robots/summit_x_arm_std.urdf.xacro
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/summit_x.srdf
+  CONFIG:
+    author_name: david
+    author_email: david@todo.es
+    generated_timestamp: 1529910448
